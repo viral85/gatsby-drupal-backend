@@ -1,0 +1,31 @@
+uuid: 32d42948-c2fc-4c27-9c88-d556d2b75e7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header_and_text
+    - node.type.article
+    - paragraphs.paragraphs_type.header_text
+  module:
+    - entity_reference_revisions
+id: node.article.field_header_and_text
+field_name: field_header_and_text
+entity_type: node
+bundle: article
+label: 'Header and Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      header_text: header_text
+    negate: 0
+    target_bundles_drag_drop:
+      header_text:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

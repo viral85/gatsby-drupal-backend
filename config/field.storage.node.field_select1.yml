@@ -1,0 +1,27 @@
+uuid: 97345ca4-e8db-49ec-a296-0ace50105f45
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_select1
+field_name: field_select1
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'on'
+      label: 'on'
+    -
+      value: 'off'
+      label: 'off'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

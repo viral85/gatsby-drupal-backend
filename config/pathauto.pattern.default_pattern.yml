@@ -1,0 +1,23 @@
+uuid: e610e4bd-6014-4ff8-9614-e394d2ff0287
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: default_pattern
+label: 'Default pattern'
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:title]'
+selection_criteria:
+  8a8afa25-0e73-4f51-b8c1-a3e5fc8dd6a5:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 8a8afa25-0e73-4f51-b8c1-a3e5fc8dd6a5
+    context_mapping:
+      node: node
+    bundles:
+      article: article
+      page: page
+selection_logic: and
+weight: -5
+relationships: {  }
